@@ -1,0 +1,57 @@
+.media_container{
+    background-color: grey;
+    min-height: 100vh;
+
+    .media {
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;       
+        row-gap: 50px;
+        .media_card {
+            width: 342px;
+            position: relative;
+            height: 500px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            .text{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: black;
+                color: white;
+                display: none;
+                h4{
+                    text-align: center;
+                    
+                }
+                .trama{
+                    display: -webkit-box;
+                    width: 100%;
+                    -webkit-line-clamp: 6;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+            }
+            &:hover .text {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.s1, .s2, .s3, .s4, .s5 {
+    opacity: 0;
+}
+.active {
+    opacity: 1;
+}
